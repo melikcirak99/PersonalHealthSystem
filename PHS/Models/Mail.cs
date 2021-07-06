@@ -11,7 +11,7 @@ namespace PHS.Models
     {
         public static void MailSender(string body, string _toAddress, string _subject)
         {
-            var fromAddress = new MailAddress("personalhealthsystem@gmail.com");
+            var fromAddress = new MailAddress("youraddress@gmail.com");
             var toAddress = new MailAddress(_toAddress);
             string subject = _subject;
             using (var smtp = new SmtpClient
@@ -21,7 +21,7 @@ namespace PHS.Models
                 EnableSsl = true,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential(fromAddress.Address, "Personal6565")
+                Credentials = new NetworkCredential(fromAddress.Address, "yourpass")
             })
             {
                 using (var message = new MailMessage(fromAddress, toAddress) { Subject = subject, Body = body })
