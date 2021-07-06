@@ -1,0 +1,25 @@
+﻿@model PHS.Models.tbl_Kisiler
+@{
+    ViewBag.Title = "Onay Mail Gonder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div>
+    <div class="w-25" style="margin:30px auto;">
+        @using (Html.BeginForm("OnayMailGonder", "Kullanici", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+            <div class="mb-3">
+                <label for="kisi_eposta" class="form-label">Email addresinizi girin</label>
+                @Html.TextBoxFor(x => x.kisi_eposta, new { @class = "form-control", @placeholder = "e posta", @aria_describedby = "emailHelp" })
+                <div id="emailHelp" class="form-text">e posta adresinize bir onay maili gönderilecek</div>
+                @Html.ValidationMessageFor(x => x.kisi_eposta)
+            </div>
+            <br />
+            <button type="submit" class="btn btn-primary">Gönder</button>
+        }
+
+        <div class="form-text">@ViewBag.mesaj</div>
+    </div>
+</div>

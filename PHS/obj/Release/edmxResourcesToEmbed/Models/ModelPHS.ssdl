@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_PHSModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Hastaliklar">
+    <Key>
+      <PropertyRef Name="hastalik_id" />
+    </Key>
+    <Property Name="hastalik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kisi_id" Type="int" Nullable="false" />
+    <Property Name="hastalik_tani" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="hastalik_tarih" Type="date" Nullable="false" />
+    <Property Name="hastalik_klinik" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="hastalik_hekim" Type="nvarchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Kisiler">
+    <Key>
+      <PropertyRef Name="kisi_id" />
+    </Key>
+    <Property Name="kisi_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kisi_isimSoyisim" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="kisi_telefon" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="kisi_eposta" Type="nvarchar" MaxLength="250" />
+    <Property Name="kisi_sifre" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="kisi_adresSatiri1" Type="nvarchar" MaxLength="250" />
+    <Property Name="kisi_adresSatiri2" Type="nvarchar" MaxLength="250" />
+    <Property Name="kisi_postaKodu" Type="int" />
+    <Property Name="kisi_il" Type="nvarchar" MaxLength="100" />
+    <Property Name="kisi_acilTelNo" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="kisi_boy" Type="tinyint" Nullable="false" />
+    <Property Name="kisi_kilo" Type="smallint" Nullable="false" />
+    <Property Name="kisi_dogumTarihi" Type="date" Nullable="false" />
+    <Property Name="kisi_cinsiyet" Type="bit" Nullable="false" />
+    <Property Name="kisi_isAktiv" Type="bit" Nullable="false" />
+    <Property Name="kisi_isHamile" Type="bit" Nullable="false" />
+    <Property Name="kisi_meslek" Type="nvarchar" MaxLength="100" />
+    <Property Name="isOnay" Type="bit" />
+    <Property Name="kisi_kod1" Type="nvarchar" MaxLength="50" />
+    <Property Name="kisi_kod2" Type="nvarchar" MaxLength="50" />
+    <Property Name="kisi_profilResim" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tbl_Randevular">
+    <Key>
+      <PropertyRef Name="randevu_id" />
+    </Key>
+    <Property Name="randevu_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="randevu_hastahane" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="randevu_doktor" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="randevu_klinik" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="randevu_tarih" Type="date" Nullable="false" />
+    <Property Name="kisi_id" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Recete">
+    <Key>
+      <PropertyRef Name="recete_id" />
+    </Key>
+    <Property Name="recete_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="kisi_id" Type="int" Nullable="false" />
+    <Property Name="recete_no" Type="int" Nullable="false" />
+    <Property Name="recete_tarih" Type="date" Nullable="false" />
+    <Property Name="recete_tur" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="recete_hekim" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ilac_1" Type="nvarchar(max)" />
+    <Property Name="ilac_2" Type="nvarchar(max)" />
+    <Property Name="ilac_3" Type="nvarchar(max)" />
+    <Property Name="ilac_4" Type="nvarchar(max)" />
+    <Property Name="ilac_5" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK_tbl_Hastaliklar_tbl_Kisiler">
+    <End Role="tbl_Kisiler" Type="Self.tbl_Kisiler" Multiplicity="1" />
+    <End Role="tbl_Hastaliklar" Type="Self.tbl_Hastaliklar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kisiler">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="tbl_Hastaliklar">
+        <PropertyRef Name="kisi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Randevular_tbl_Kisiler">
+    <End Role="tbl_Kisiler" Type="Self.tbl_Kisiler" Multiplicity="1" />
+    <End Role="tbl_Randevular" Type="Self.tbl_Randevular" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kisiler">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="tbl_Randevular">
+        <PropertyRef Name="kisi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Recete_tbl_Kisiler1">
+    <End Role="tbl_Kisiler" Type="Self.tbl_Kisiler" Multiplicity="1" />
+    <End Role="tbl_Recete" Type="Self.tbl_Recete" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kisiler">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="tbl_Recete">
+        <PropertyRef Name="kisi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="db_PHSModelStoreContainer">
+    <EntitySet Name="tbl_admin" EntityType="Self.tbl_admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Hastaliklar" EntityType="Self.tbl_Hastaliklar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Kisiler" EntityType="Self.tbl_Kisiler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Randevular" EntityType="Self.tbl_Randevular" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_Recete" EntityType="Self.tbl_Recete" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_tbl_Hastaliklar_tbl_Kisiler" Association="Self.FK_tbl_Hastaliklar_tbl_Kisiler">
+      <End Role="tbl_Kisiler" EntitySet="tbl_Kisiler" />
+      <End Role="tbl_Hastaliklar" EntitySet="tbl_Hastaliklar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Randevular_tbl_Kisiler" Association="Self.FK_tbl_Randevular_tbl_Kisiler">
+      <End Role="tbl_Kisiler" EntitySet="tbl_Kisiler" />
+      <End Role="tbl_Randevular" EntitySet="tbl_Randevular" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Recete_tbl_Kisiler1" Association="Self.FK_tbl_Recete_tbl_Kisiler1">
+      <End Role="tbl_Kisiler" EntitySet="tbl_Kisiler" />
+      <End Role="tbl_Recete" EntitySet="tbl_Recete" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

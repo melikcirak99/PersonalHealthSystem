@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="47beed7245e24134a58cab245c10500c" Name="Diagram1">
+        <EntityTypeShape EntityType="db_PHSModel.tbl_admin" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_PHSModel.tbl_Hastaliklar" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_PHSModel.tbl_Ilac" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_PHSModel.tbl_Kisiler" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_PHSModel.tbl_Randevular" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="db_PHSModel.tbl_Recete" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <AssociationConnector Association="db_PHSModel.FK_tbl_Hastaliklar_tbl_Kisiler" ManuallyRouted="false" />
+        <AssociationConnector Association="db_PHSModel.FK_tbl_Ilac_tbl_Recete" ManuallyRouted="false" />
+        <AssociationConnector Association="db_PHSModel.FK_tbl_Randevular_tbl_Kisiler" ManuallyRouted="false" />
+        <AssociationConnector Association="db_PHSModel.FK_tbl_Recete_tbl_Kisiler1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

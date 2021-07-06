@@ -1,0 +1,86 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- fonatwesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!--custom css -->
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles/css/themes/all.css">
+    <link rel="icon" href="~/Content/Styles/images/favicon.ico" type="image/x-icon" />
+
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+
+    <div id="page" class="page-default container-fluid">
+        <header id="header" class="header">
+            <div class="row">
+                <div id="Navbar" class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="anasayfa.html">hakkımızda</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="reçetelerim.html">giriş yapın</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header><!-- /header -->
+
+
+        @RenderBody()
+
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="site-info text-uppercase">
+                            kişisel sağlık sistemi <span class="text-capitalize"> copyright 2021 tüm hakları saklıdır.</span>
+                            <div class="text-capitalize">
+                                bu site creative common uluslararası lisanları ile lisanslanmaktadır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button id="back2top"><i class="fas fa-arrow-up"></i></button>
+    </div>
+
+    <script src="~/Content/Styles/images/back2top-main/back2top/back2top.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="~/Content/Styles/js/main.js"></script>
+    <script>
+
+        BACK2TOP(document.querySelector("#back2top"), 200);
+    </script>
+</body>
+</html>

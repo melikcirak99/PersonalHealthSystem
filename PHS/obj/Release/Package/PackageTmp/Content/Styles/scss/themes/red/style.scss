@@ -1,0 +1,348 @@
+@import "colors.scss";
+@import "materials.scss";
+
+.page-red {
+    font-family: 'Roboto', sans-serif;
+    #header {
+        background-color: color($colors, primary) !important;
+
+        .navbar {
+            border-radius: 5px;
+            background-color: color($colors, primary) !important;
+
+            .nav-link {
+                color: white !important;
+                text-transform: capitalize;
+            }
+        }
+
+        #photo {
+            padding: 10px;
+            border-radius: 10px;
+
+            img {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                margin: 0 30%;
+                border-radius: 50%;
+            }
+        }
+
+        .theme-choice {
+            position: absolute;
+            top: 50px;
+            left: 34px;
+            width: 245px;
+            //background-color: white;
+            padding: 3px 6px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .color {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    #page-body {
+        .breadcrumb-host {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .appointments {
+            .title {
+                text-align: center;
+                margin-bottom: 10px;
+
+                h3 {
+                    text-transform: uppercase;
+                    z-index: 2;
+                    font-size: 20px;
+                    padding: 5px;
+                    border-radius: 5px 10px;
+                    margin-top: 12px;
+                }
+            }
+
+            .card {
+                box-shadow: 5px 5px rgba(0, 98, 90, 0.4);
+                margin-bottom: 15px;
+                margin-left: 10px;
+                position: relative;
+
+                .card-body {
+                    .doctor-name {
+                        text-transform: uppercase;
+
+                        span {
+                            color: color($colors, secondary);
+                            display: block;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .hospital-name {
+                        text-transform: uppercase;
+                        margin-top: 50px;
+                    }
+                }
+
+                .time {
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 150px;
+                    padding: 10px;
+                    color: white;
+                    background-color: color($colors, primary);
+                }
+            }
+        }
+
+        .UserInfos {
+            margin-top: 60px;
+            margin-left: -40px;
+            font-size: 15px;
+            text-transform: capitalize;
+            height: 100%;
+            padding: 20px 10px;
+            border-radius: 15px;
+
+            .UserInfo {
+                display: flex;
+                text-align: center;
+
+                .info-q, .info-a {
+                    min-width: 170px;
+                    padding: 5px 10px;
+                    color: white;
+                }
+
+                .info-q {
+                    background-color: color($colors, primary);
+                }
+
+                .info-a {
+                    background-color: color($colors, secondary);
+                }
+            }
+        }
+
+        .vik-map {
+            background-color: color($colors, grey);
+            padding: 20px 30px;
+            margin-top: 20px;
+
+            .title h3 {
+                background-color: transparent;
+            }
+        }
+
+
+
+        .register-form {
+            width: 40%;
+            margin: 20px auto;
+
+            label {
+                text-transform: capitalize;
+            }
+
+            .requireds {
+                color: red;
+                font-size: 17px;
+            }
+
+            .form-group {
+                position: relative;
+                padding: 10px 20px;
+                box-shadow: 1px 1px 1px 1px color($colors, box-shadow);
+                margin-bottom: 10px;
+
+                input {
+                    padding: 10px;
+                    margin-bottom: 1px;
+                }
+
+                .namebefore {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-right: 21px;
+                    margin-top: 35px;
+                    background-color: color($colors, secondary);
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 30px;
+                        color: color($colors, grey);
+                    }
+
+                    &:hover {
+                        .tip {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: 0.6s;
+                        }
+                    }
+
+                    .tip {
+                        position: absolute;
+                        left: 70px;
+                        font-size: 14px;
+                        color: white;
+                        border-radius: 2px;
+                        opacity: .9;
+                        padding: 1px 3px;
+                        /* margin: 0; */
+                        width: 100px;
+                    }
+                }
+
+                .span-group {
+                    i {
+                        background-color: color($colors, secondary);
+                        width: 45px;
+                        height: 45px;
+                        margin-top: -4px;
+                        margin-right: -4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .span-group {
+                    display: flex;
+                    align-items: flex-start;
+                    width: 100%;
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        font-size: 30px;
+                        color: color($colors, grey);
+                        right: 5px;
+                        top: 4px;
+                    }
+                }
+
+                #password-icon:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+        .medicine, .phones {
+            .card {
+                padding: 15px 5% 15px 100px;
+                position: relative;
+
+                .tarih {
+                    background-color: color($colors, primary);
+                }
+            }
+
+            .tarih {
+                position: absolute;
+                width: 68px;
+                height: 68px;
+                border-radius: 50%;
+                text-align: center;
+                left: 16px;
+                color: #fff;
+
+                .gun {
+                    font-family: "Roboto condensed",sans-serif;
+                    font-size: 28px;
+                    display: block;
+                    padding-top: 5px;
+                }
+
+                .ay {
+                    margin-top: -7px;
+                    display: block;
+                }
+
+                .home-widget-title {
+                    font-size: 18px;
+                    display: block;
+                    font-family: 'roboto condensed',sans-serif;
+                    color: #454545;
+                    margin-bottom: 10px !important;
+                }
+
+                .textb {
+                    color: #70757e;
+                    display: block;
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .phones {
+
+            .phone {
+                .tarih {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    footer {
+        margin-top: 50px;
+        color: white;
+        background-color: color($colors, primary);
+        height: 100px;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        font-size: 16px;
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .dene-form {
+        input:focus {
+            box-shadow: none;
+            border: none;
+        }
+
+        label {
+            padding: 7px;
+            text-transform: uppercase;
+            height: 34px;
+            margin-top: 2px;
+            background-color: color($colors, primary);
+            color: white;
+            width: 50px;
+        }
+    }
+}
+
+.theme-choice{
+	.color{
+		button{
+			border-radius: 5px;
+		}
+	}
+}

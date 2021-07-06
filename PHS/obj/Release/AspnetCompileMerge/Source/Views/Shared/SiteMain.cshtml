@@ -1,0 +1,150 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" , name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="icon" href="~/Content/Styles/images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Material Kit CSS -->
+    <link href="~/Content/MaterialUi/assets/css/material-kit.css" rel="stylesheet" />
+
+    <!-- fonatwesome -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--custom css -->
+    <!--link rel="stylesheet" type="text/css" href="css/style.css"-->
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles/css/themes/all.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>sağlık takip sistemi</title>
+</head>
+<body style="overflow-x:hidden;" id="body">
+    <div class="page-default" id="page">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="row">
+                    <div id="Navbar" class="col-9">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="/Home/Index" class="nav-link">Ana sayfa</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Recete">Reçetelerim</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Hastaliklar">Hastalıklarım</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/Home/Profil">Profil</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div class="col-6" id="photo">
+                                <img src="~/UserImages/DefaultImage/profil.png" alt="profil" width="100" height="100" id="profilImage">
+                            </div>
+                            <div class="col-6 nav-item mt-4">
+                                <div>
+                                    <a href="@Url.Action("Cikis", "Home")" class="btn btn-secondary text-white">çıkış yap</a>
+                                </div>
+
+                                <button type="button" class="btn btn-dark" id="dark-ch" style="z-index:9999;"><i class="fas fa-moon"></i></button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12" style="position:absolute;top:80px; display:flex;">
+                        <button type="button" class="btn" style="background-color: #343f56; width:10px;" id="default-ch"></button>
+                        <button type="button" class="btn" style="background-color: #48dbfb; width:10px;" id="blue-ch"></button>
+                        <button type="button" class="btn" style="background-color:#F39C12;" width:10px; id="red-ch"></button>
+                        <button type="button" class="btn" style="background-color: #341f60; width:10px;" id="purple-ch"></button>
+                    </div>
+                </div>
+            </div>
+        </header><!-- /header -->
+
+        <div class="mainContent">
+            @RenderBody()
+        </div>
+
+        <footer id="footer" class="page-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="site-info text-uppercase" style="padding: 5px 20px;">
+                            kişisel sağlık sistemi <span class="text-capitalize"> copyright 2021 tüm hakları saklıdır.</span>
+                            <div class="text-capitalize">
+                                bu site creative common uluslararası lisanları ile lisanslanmaktadır.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <button id="toTop"><i class="fas fa-arrow-up"></i></button>
+    </div>
+    <script src="~/Content/MaterialUi/assets/js/core/jquery.min.js"></script>
+    <script src="~/Content/MaterialUi/assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="~/Content/MaterialUi/assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+    <script src="~/Content/MaterialUi/assets/js/plugins/moment.min.js"></script>
+
+    <!--    Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+    <script src="~/Content/MaterialUi/assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="~/Content/MaterialUi/assets/js/material-kit.js?v=2.0.4" type="text/javascript"></script>
+    <script>
+        //$('.datetimepicker').datetimepicker({
+        //    icons: {
+        //        time: "fa fa-clock-o",
+        //        date: "fa fa-calendar",
+        //        up: "fa fa-chevron-up",
+        //        down: "fa fa-chevron-down",
+        //        previous: 'fa fa-chevron-left',
+        //        next: 'fa fa-chevron-right',
+        //        today: 'fa fa-screenshot',
+        //        clear: 'fa fa-trash',
+        //        close: 'fa fa-remove'
+        //    },
+        //    "format": "DD-MM-YYYY"
+        //});
+    </script>
+    <script src="~/Content/Styles/js/main.js"></script>
+    <script src="~/Content/Styles/js/theme.js"></script>
+    <script>
+        $(window).on("scroll", function () {
+            if ($(this).scrollTop() > 50) {
+                $('#toTop').fadeIn(400);
+            } else {
+                $('#toTop').fadeOut(400);
+            }
+        });
+        $("#toTop").on("click", function () {
+            $("html, body").animate({ scrollTop: 0 }, 800);
+        });
+    </script>
+</body>
+</html>

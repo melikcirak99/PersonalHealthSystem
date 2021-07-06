@@ -1,0 +1,30 @@
+﻿@model PHS.Models.tbl_Recete
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/SiteMain.cshtml";
+}
+
+
+<div class="container mt-5">
+    @if (ViewBag.ilaclar != null)
+    {
+    <ul class="list-group">
+        @foreach (var item in ViewBag.ilaclar)
+        {
+
+        <li class="list-group-item">
+            <span class="mr-1">@item.ilan_name</span>
+            <span class="badge bg-primary">@item.ilac_doz doz</span>
+        </li>
+
+        }
+    </ul>
+    }
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.recete_id }, new { @class = "btn btn-warning" })
+        <a href="/Recete/Index" class="btn btn-primary">
+            <span class="material-icons">arrow_back</span> Geri
+        </a>
+    </p>
+</div>

@@ -1,0 +1,96 @@
+﻿@model IEnumerable<PHS.Models.tbl_Hastaliklar>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SiteMain.cshtml";
+}
+
+<div class="container" style="min-height:370px;">
+    <div class="row">
+        <div class="col-12 mt-5">
+
+            <p>
+                @Html.ActionLink("Ekle", "Create", null, new { @class = "btn btn-primary" })
+            </p>
+            <table class="table">
+                <tr>
+                    <th>
+                        Tanı
+                    </th>
+                    <th>
+                        Tarih
+                    </th>
+                    <th>
+                        Klinik
+                    </th>
+                    <th>
+                        Doktor
+                    </th>
+                    <th>
+                        Kişi
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.hastalik_tani)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.hastalik_tarih)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.hastalik_klinik)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.hastalik_hekim)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.tbl_Kisiler.kisi_isimSoyisim)
+                        </td>
+                        <td>
+                            <a href="/Hastaliklar/Edit/@item.hastalik_id" class="material-icons">
+                                <span class="material-icons text-success">edit</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="/Hastaliklar/Details/@item.hastalik_id" class="material-icons">
+                                <span class="material-icons text-info">info</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#"  class="material-icons" type="button" data-toggle="modal" data-target="#@item.hastalik_id">
+                                <span class="material-icons text-danger">delete</span>
+                            </a>
+                        </td>
+                    </tr>
+                    <!-- Modal -->
+                    <div class="modal fade" id="@item.hastalik_id" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Hastalık Silinsin mi?</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Hastalık silinsin mi?
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary mr-1" data-dismiss="modal">İptal</button>                                      
+                                     @Html.ActionLink("Sil", "Delete", new { id = item.hastalik_id }, new { @class="btn btn-danger", @type="button" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </table>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,2146 @@
+/* line 3, dark/materials.scss */
+body {
+  font-weight: normal !important;
+  line-height: normal !important;
+}
+
+/* line 8, dark/materials.scss */
+.page-dark .btn-primary {
+  background-color: #1f1b24 !important;
+  border-color: #1f1b24 !important;
+}
+/* line 13, dark/materials.scss */
+.page-dark .btn-secondary {
+  background-color: #121212 !important;
+  border-color: #121212 !important;
+}
+/* line 18, dark/materials.scss */
+.page-dark a {
+  color: #1f1b24;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 24, dark/materials.scss */
+.page-dark .tip {
+  background-color: #121212;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 35, dark/materials.scss */
+.page-dark .tip:before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: -28px;
+  margin-top: -14px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #387c6d transparent transparent;
+}
+/* line 48, dark/materials.scss */
+.page-dark .card h1, .page-dark .card h2, .page-dark .card h3, .page-dark .card h4, .page-dark .card h5, .page-dark .card h6 {
+  text-transform: capitalize !important;
+  font-weight: normal;
+}
+/* line 54, dark/materials.scss */
+.page-dark #back2top {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  opacity: 0;
+  visibility: hidden;
+  /*For better looking button*/
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background-color: #121212;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 78, dark/materials.scss */
+.page-dark .form-group input[type=text], .page-dark .form-group input[type=password] {
+  box-shadow: none;
+  border: 0.5px solid #E7E7E7;
+  background-color: transparent !important;
+}
+/* line 83, dark/materials.scss */
+.page-dark .form-group input[type=text]:focus, .page-dark .form-group input[type=password]:focus {
+  border: 0.5px solid #121212;
+}
+/* line 87, dark/materials.scss */
+.page-dark .form-group input[type=text]:checked, .page-dark .form-group input[type=password]:checked {
+  border: 0.5px solid #121212;
+}
+/* line 94, dark/materials.scss */
+.page-dark .placeholder {
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: -2;
+  opacity: 0.6;
+}
+/* line 103, dark/materials.scss */
+.page-dark .placeholder-up {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  padding: 1px 3px;
+}
+
+/* line 4, dark/style.scss */
+.page-dark {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 6, dark/style.scss */
+.page-dark #header {
+  background-color: #1f1b24 !important;
+}
+/* line 9, dark/style.scss */
+.page-dark #header .navbar {
+  border-radius: 5px;
+  background-color: #1f1b24 !important;
+}
+/* line 13, dark/style.scss */
+.page-dark #header .navbar .nav-link {
+  color: white !important;
+  text-transform: capitalize;
+}
+/* line 19, dark/style.scss */
+.page-dark #header #photo {
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 23, dark/style.scss */
+.page-dark #header #photo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 30%;
+  border-radius: 50%;
+}
+/* line 32, dark/style.scss */
+.page-dark #header .theme-choice {
+  position: absolute;
+  top: 50px;
+  left: 34px;
+  width: 245px;
+  padding: 3px 6px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 44, dark/style.scss */
+.page-dark #header .theme-choice .color {
+  margin: 0 auto;
+}
+/* line 51, dark/style.scss */
+.page-dark #page-body .breadcrumb-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 59, dark/style.scss */
+.page-dark #page-body .appointments .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 63, dark/style.scss */
+.page-dark #page-body .appointments .title h3 {
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px 10px;
+  margin-top: 12px;
+}
+/* line 73, dark/style.scss */
+.page-dark #page-body .appointments .card {
+  box-shadow: 5px 5px rgba(0, 98, 90, 0.4);
+  margin-bottom: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 80, dark/style.scss */
+.page-dark #page-body .appointments .card .card-body .doctor-name {
+  text-transform: uppercase;
+}
+/* line 83, dark/style.scss */
+.page-dark #page-body .appointments .card .card-body .doctor-name span {
+  color: #121212;
+  display: block;
+  font-weight: bold;
+}
+/* line 90, dark/style.scss */
+.page-dark #page-body .appointments .card .card-body .hospital-name {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+/* line 96, dark/style.scss */
+.page-dark #page-body .appointments .card .time {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #1f1b24;
+}
+/* line 109, dark/style.scss */
+.page-dark #page-body .UserInfos {
+  margin-top: 60px;
+  margin-left: -40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 100%;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+/* line 118, dark/style.scss */
+.page-dark #page-body .UserInfos .UserInfo {
+  display: flex;
+  text-align: center;
+}
+/* line 122, dark/style.scss */
+.page-dark #page-body .UserInfos .UserInfo .info-q, .page-dark #page-body .UserInfos .UserInfo .info-a {
+  min-width: 170px;
+  padding: 5px 10px;
+  color: white;
+}
+/* line 128, dark/style.scss */
+.page-dark #page-body .UserInfos .UserInfo .info-q {
+  background-color: #1f1b24;
+}
+/* line 132, dark/style.scss */
+.page-dark #page-body .UserInfos .UserInfo .info-a {
+  background-color: #121212;
+}
+/* line 138, dark/style.scss */
+.page-dark #page-body .vik-map {
+  background-color: #E7E7E7;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+/* line 143, dark/style.scss */
+.page-dark #page-body .vik-map .title h3 {
+  background-color: transparent;
+}
+/* line 150, dark/style.scss */
+.page-dark #page-body .register-form {
+  width: 40%;
+  margin: 20px auto;
+}
+/* line 154, dark/style.scss */
+.page-dark #page-body .register-form label {
+  text-transform: capitalize;
+}
+/* line 158, dark/style.scss */
+.page-dark #page-body .register-form .requireds {
+  color: red;
+  font-size: 17px;
+}
+/* line 163, dark/style.scss */
+.page-dark #page-body .register-form .form-group {
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 1px #f8f5f1;
+  margin-bottom: 10px;
+}
+/* line 169, dark/style.scss */
+.page-dark #page-body .register-form .form-group input {
+  padding: 10px;
+  margin-bottom: 1px;
+}
+/* line 174, dark/style.scss */
+.page-dark #page-body .register-form .form-group .namebefore {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 21px;
+  margin-top: 35px;
+  background-color: #121212;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 187, dark/style.scss */
+.page-dark #page-body .register-form .form-group .namebefore i {
+  font-size: 30px;
+  color: #E7E7E7;
+}
+/* line 193, dark/style.scss */
+.page-dark #page-body .register-form .form-group .namebefore:hover .tip {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s;
+}
+/* line 200, dark/style.scss */
+.page-dark #page-body .register-form .form-group .namebefore .tip {
+  position: absolute;
+  left: 70px;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+  opacity: .9;
+  padding: 1px 3px;
+  /* margin: 0; */
+  width: 100px;
+}
+/* line 214, dark/style.scss */
+.page-dark #page-body .register-form .form-group .span-group i {
+  background-color: #121212;
+  width: 45px;
+  height: 45px;
+  margin-top: -4px;
+  margin-right: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 226, dark/style.scss */
+.page-dark #page-body .register-form .form-group .span-group {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+/* line 232, dark/style.scss */
+.page-dark #page-body .register-form .form-group .span-group i {
+  position: absolute;
+  font-size: 30px;
+  color: #E7E7E7;
+  right: 5px;
+  top: 4px;
+}
+/* line 241, dark/style.scss */
+.page-dark #page-body .register-form .form-group #password-icon:hover {
+  cursor: pointer;
+}
+/* line 249, dark/style.scss */
+.page-dark #page-body .medicine .card, .page-dark #page-body .phones .card {
+  padding: 15px 5% 15px 100px;
+  position: relative;
+}
+/* line 253, dark/style.scss */
+.page-dark #page-body .medicine .card .tarih, .page-dark #page-body .phones .card .tarih {
+  background-color: #1f1b24;
+}
+/* line 258, dark/style.scss */
+.page-dark #page-body .medicine .tarih, .page-dark #page-body .phones .tarih {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-align: center;
+  left: 16px;
+  color: #fff;
+}
+/* line 267, dark/style.scss */
+.page-dark #page-body .medicine .tarih .gun, .page-dark #page-body .phones .tarih .gun {
+  font-family: "Roboto condensed",sans-serif;
+  font-size: 28px;
+  display: block;
+  padding-top: 5px;
+}
+/* line 274, dark/style.scss */
+.page-dark #page-body .medicine .tarih .ay, .page-dark #page-body .phones .tarih .ay {
+  margin-top: -7px;
+  display: block;
+}
+/* line 279, dark/style.scss */
+.page-dark #page-body .medicine .tarih .home-widget-title, .page-dark #page-body .phones .tarih .home-widget-title {
+  font-size: 18px;
+  display: block;
+  font-family: 'roboto condensed',sans-serif;
+  color: #454545;
+  margin-bottom: 10px !important;
+}
+/* line 287, dark/style.scss */
+.page-dark #page-body .medicine .tarih .textb, .page-dark #page-body .phones .tarih .textb {
+  color: #70757e;
+  display: block;
+  font-size: 15px;
+}
+/* line 298, dark/style.scss */
+.page-dark #page-body .phones .phone .tarih {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+/* line 309, dark/style.scss */
+.page-dark footer {
+  margin-top: 50px;
+  color: white;
+  background-color: #1f1b24;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 319, dark/style.scss */
+.page-dark footer span {
+  font-size: 14px;
+}
+/* line 325, dark/style.scss */
+.page-dark .dene-form input:focus {
+  box-shadow: none;
+  border: none;
+}
+/* line 330, dark/style.scss */
+.page-dark .dene-form label {
+  padding: 7px;
+  text-transform: uppercase;
+  height: 34px;
+  margin-top: 2px;
+  background-color: #1f1b24;
+  color: white;
+  width: 50px;
+}
+
+/* line 344, dark/style.scss */
+.theme-choice .color button {
+  border-radius: 5px;
+}
+
+/* line 3, blue/materials.scss */
+body {
+  font-weight: normal !important;
+  line-height: normal !important;
+}
+
+/* line 8, blue/materials.scss */
+.page-blue .btn-primary {
+  background-color: #0abde3 !important;
+  border-color: #0abde3 !important;
+}
+/* line 13, blue/materials.scss */
+.page-blue .btn-secondary {
+  background-color: #48dbfb !important;
+  border-color: #48dbfb !important;
+}
+/* line 18, blue/materials.scss */
+.page-blue a {
+  color: #0abde3;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 24, blue/materials.scss */
+.page-blue .tip {
+  background-color: #48dbfb;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 35, blue/materials.scss */
+.page-blue .tip:before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: -28px;
+  margin-top: -14px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #387c6d transparent transparent;
+}
+/* line 48, blue/materials.scss */
+.page-blue .card h1, .page-blue .card h2, .page-blue .card h3, .page-blue .card h4, .page-blue .card h5, .page-blue .card h6 {
+  text-transform: capitalize !important;
+  font-weight: normal;
+}
+/* line 54, blue/materials.scss */
+.page-blue #back2top {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  opacity: 0;
+  visibility: hidden;
+  /*For better looking button*/
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background-color: #48dbfb;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 78, blue/materials.scss */
+.page-blue .form-group input[type=text], .page-blue .form-group input[type=password] {
+  box-shadow: none;
+  border: 0.5px solid #E7E7E7;
+  background-color: transparent !important;
+}
+/* line 83, blue/materials.scss */
+.page-blue .form-group input[type=text]:focus, .page-blue .form-group input[type=password]:focus {
+  border: 0.5px solid #48dbfb;
+}
+/* line 87, blue/materials.scss */
+.page-blue .form-group input[type=text]:checked, .page-blue .form-group input[type=password]:checked {
+  border: 0.5px solid #48dbfb;
+}
+/* line 94, blue/materials.scss */
+.page-blue .placeholder {
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: -2;
+  opacity: 0.6;
+}
+/* line 103, blue/materials.scss */
+.page-blue .placeholder-up {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  padding: 1px 3px;
+}
+
+/* line 4, blue/style.scss */
+.page-blue {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 6, blue/style.scss */
+.page-blue #header {
+  background-color: #0abde3 !important;
+}
+/* line 9, blue/style.scss */
+.page-blue #header .navbar {
+  border-radius: 5px;
+  background-color: #0abde3 !important;
+}
+/* line 13, blue/style.scss */
+.page-blue #header .navbar .nav-link {
+  color: white !important;
+  text-transform: capitalize;
+}
+/* line 19, blue/style.scss */
+.page-blue #header #photo {
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 23, blue/style.scss */
+.page-blue #header #photo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 30%;
+  border-radius: 50%;
+}
+/* line 32, blue/style.scss */
+.page-blue #header .theme-choice {
+  position: absolute;
+  top: 50px;
+  left: 34px;
+  width: 245px;
+  padding: 3px 6px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 44, blue/style.scss */
+.page-blue #header .theme-choice .color {
+  margin: 0 auto;
+}
+/* line 51, blue/style.scss */
+.page-blue #page-body .breadcrumb-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 59, blue/style.scss */
+.page-blue #page-body .appointments .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 63, blue/style.scss */
+.page-blue #page-body .appointments .title h3 {
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px 10px;
+  margin-top: 12px;
+}
+/* line 73, blue/style.scss */
+.page-blue #page-body .appointments .card {
+  box-shadow: 5px 5px rgba(0, 98, 90, 0.4);
+  margin-bottom: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 80, blue/style.scss */
+.page-blue #page-body .appointments .card .card-body .doctor-name {
+  text-transform: uppercase;
+}
+/* line 83, blue/style.scss */
+.page-blue #page-body .appointments .card .card-body .doctor-name span {
+  color: #48dbfb;
+  display: block;
+  font-weight: bold;
+}
+/* line 90, blue/style.scss */
+.page-blue #page-body .appointments .card .card-body .hospital-name {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+/* line 96, blue/style.scss */
+.page-blue #page-body .appointments .card .time {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #0abde3;
+}
+/* line 109, blue/style.scss */
+.page-blue #page-body .UserInfos {
+  margin-top: 60px;
+  margin-left: -40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 100%;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+/* line 118, blue/style.scss */
+.page-blue #page-body .UserInfos .UserInfo {
+  display: flex;
+  text-align: center;
+}
+/* line 122, blue/style.scss */
+.page-blue #page-body .UserInfos .UserInfo .info-q, .page-blue #page-body .UserInfos .UserInfo .info-a {
+  min-width: 170px;
+  padding: 5px 10px;
+  color: white;
+}
+/* line 128, blue/style.scss */
+.page-blue #page-body .UserInfos .UserInfo .info-q {
+  background-color: #0abde3;
+}
+/* line 132, blue/style.scss */
+.page-blue #page-body .UserInfos .UserInfo .info-a {
+  background-color: #48dbfb;
+}
+/* line 138, blue/style.scss */
+.page-blue #page-body .vik-map {
+  background-color: #E7E7E7;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+/* line 143, blue/style.scss */
+.page-blue #page-body .vik-map .title h3 {
+  background-color: transparent;
+}
+/* line 150, blue/style.scss */
+.page-blue #page-body .register-form {
+  width: 40%;
+  margin: 20px auto;
+}
+/* line 154, blue/style.scss */
+.page-blue #page-body .register-form label {
+  text-transform: capitalize;
+}
+/* line 158, blue/style.scss */
+.page-blue #page-body .register-form .requireds {
+  color: red;
+  font-size: 17px;
+}
+/* line 163, blue/style.scss */
+.page-blue #page-body .register-form .form-group {
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 1px #f8f5f1;
+  margin-bottom: 10px;
+}
+/* line 169, blue/style.scss */
+.page-blue #page-body .register-form .form-group input {
+  padding: 10px;
+  margin-bottom: 1px;
+}
+/* line 174, blue/style.scss */
+.page-blue #page-body .register-form .form-group .namebefore {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 21px;
+  margin-top: 35px;
+  background-color: #48dbfb;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 187, blue/style.scss */
+.page-blue #page-body .register-form .form-group .namebefore i {
+  font-size: 30px;
+  color: #E7E7E7;
+}
+/* line 193, blue/style.scss */
+.page-blue #page-body .register-form .form-group .namebefore:hover .tip {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s;
+}
+/* line 200, blue/style.scss */
+.page-blue #page-body .register-form .form-group .namebefore .tip {
+  position: absolute;
+  left: 70px;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+  opacity: .9;
+  padding: 1px 3px;
+  /* margin: 0; */
+  width: 100px;
+}
+/* line 214, blue/style.scss */
+.page-blue #page-body .register-form .form-group .span-group i {
+  background-color: #48dbfb;
+  width: 45px;
+  height: 45px;
+  margin-top: -4px;
+  margin-right: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 226, blue/style.scss */
+.page-blue #page-body .register-form .form-group .span-group {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+/* line 232, blue/style.scss */
+.page-blue #page-body .register-form .form-group .span-group i {
+  position: absolute;
+  font-size: 30px;
+  color: #E7E7E7;
+  right: 5px;
+  top: 4px;
+}
+/* line 241, blue/style.scss */
+.page-blue #page-body .register-form .form-group #password-icon:hover {
+  cursor: pointer;
+}
+/* line 249, blue/style.scss */
+.page-blue #page-body .medicine .card, .page-blue #page-body .phones .card {
+  padding: 15px 5% 15px 100px;
+  position: relative;
+}
+/* line 253, blue/style.scss */
+.page-blue #page-body .medicine .card .tarih, .page-blue #page-body .phones .card .tarih {
+  background-color: #0abde3;
+}
+/* line 258, blue/style.scss */
+.page-blue #page-body .medicine .tarih, .page-blue #page-body .phones .tarih {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-align: center;
+  left: 16px;
+  color: #fff;
+}
+/* line 267, blue/style.scss */
+.page-blue #page-body .medicine .tarih .gun, .page-blue #page-body .phones .tarih .gun {
+  font-family: "Roboto condensed",sans-serif;
+  font-size: 28px;
+  display: block;
+  padding-top: 5px;
+}
+/* line 274, blue/style.scss */
+.page-blue #page-body .medicine .tarih .ay, .page-blue #page-body .phones .tarih .ay {
+  margin-top: -7px;
+  display: block;
+}
+/* line 279, blue/style.scss */
+.page-blue #page-body .medicine .tarih .home-widget-title, .page-blue #page-body .phones .tarih .home-widget-title {
+  font-size: 18px;
+  display: block;
+  font-family: 'roboto condensed',sans-serif;
+  color: #454545;
+  margin-bottom: 10px !important;
+}
+/* line 287, blue/style.scss */
+.page-blue #page-body .medicine .tarih .textb, .page-blue #page-body .phones .tarih .textb {
+  color: #70757e;
+  display: block;
+  font-size: 15px;
+}
+/* line 298, blue/style.scss */
+.page-blue #page-body .phones .phone .tarih {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+/* line 309, blue/style.scss */
+.page-blue footer {
+  margin-top: 50px;
+  color: white;
+  background-color: #0abde3;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 319, blue/style.scss */
+.page-blue footer span {
+  font-size: 14px;
+}
+/* line 325, blue/style.scss */
+.page-blue .dene-form input:focus {
+  box-shadow: none;
+  border: none;
+}
+/* line 330, blue/style.scss */
+.page-blue .dene-form label {
+  padding: 7px;
+  text-transform: uppercase;
+  height: 34px;
+  margin-top: 2px;
+  background-color: #0abde3;
+  color: white;
+  width: 50px;
+}
+
+/* line 344, blue/style.scss */
+.theme-choice .color button {
+  border-radius: 5px;
+}
+
+/* line 3, default/materials.scss */
+body {
+  font-weight: normal !important;
+  line-height: normal !important;
+}
+
+/* line 7, default/materials.scss */
+.page-default {
+  /*  .form-group {
+        input[type=text], input[type=password] {
+            box-shadow: none;
+            border: 0.5px solid color($colors, grey);
+            background-color: transparent !important;
+
+            &:focus {
+                border: 0.5px solid color($colors, secondary);
+            }
+
+            &:checked {
+                border: 0.5px solid color($colors, secondary);
+            }
+        }
+    }*/
+}
+/* line 8, default/materials.scss */
+.page-default .btn-primary {
+  background-color: #343f56 !important;
+  border-color: #343f56 !important;
+}
+/* line 13, default/materials.scss */
+.page-default .btn-secondary {
+  background-color: #387c6d !important;
+  border-color: #387c6d !important;
+}
+/* line 18, default/materials.scss */
+.page-default a {
+  color: #343f56;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 24, default/materials.scss */
+.page-default .tip {
+  background-color: #387c6d;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 34, default/materials.scss */
+.page-default .tip:before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: -28px;
+  margin-top: -14px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #387c6d transparent transparent;
+}
+/* line 47, default/materials.scss */
+.page-default .card h1, .page-default .card h2, .page-default .card h3, .page-default .card h4, .page-default .card h5, .page-default .card h6 {
+  text-transform: capitalize !important;
+  font-weight: normal;
+}
+/* line 53, default/materials.scss */
+.page-default #back2top {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  opacity: 0;
+  visibility: hidden;
+  /*For better looking button*/
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background-color: #387c6d;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 93, default/materials.scss */
+.page-default .placeholder {
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: -2;
+  opacity: 0.6;
+}
+/* line 102, default/materials.scss */
+.page-default .placeholder-up {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  padding: 1px 3px;
+}
+
+/* line 4, default/style.scss */
+.page-default {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 6, default/style.scss */
+.page-default #header {
+  background-color: #343f56 !important;
+}
+/* line 9, default/style.scss */
+.page-default #header .navbar {
+  border-radius: 5px;
+  background-color: #343f56 !important;
+}
+/* line 13, default/style.scss */
+.page-default #header .navbar .nav-link {
+  color: white !important;
+  text-transform: capitalize;
+}
+/* line 19, default/style.scss */
+.page-default #header #photo {
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 23, default/style.scss */
+.page-default #header #photo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 30%;
+  border-radius: 50%;
+}
+/* line 32, default/style.scss */
+.page-default #header .theme-choice {
+  position: absolute;
+  top: 50px;
+  left: 34px;
+  width: 245px;
+  padding: 3px 6px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 44, default/style.scss */
+.page-default #header .theme-choice .color {
+  margin: 0 auto;
+}
+/* line 51, default/style.scss */
+.page-default #page-body .breadcrumb-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 59, default/style.scss */
+.page-default #page-body .appointments .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 63, default/style.scss */
+.page-default #page-body .appointments .title h3 {
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px 10px;
+  margin-top: 12px;
+}
+/* line 73, default/style.scss */
+.page-default #page-body .appointments .card {
+  box-shadow: 5px 5px rgba(0, 98, 90, 0.4);
+  margin-bottom: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 80, default/style.scss */
+.page-default #page-body .appointments .card .card-body .doctor-name {
+  text-transform: uppercase;
+}
+/* line 83, default/style.scss */
+.page-default #page-body .appointments .card .card-body .doctor-name span {
+  color: #387c6d;
+  display: block;
+  font-weight: bold;
+}
+/* line 90, default/style.scss */
+.page-default #page-body .appointments .card .card-body .hospital-name {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+/* line 96, default/style.scss */
+.page-default #page-body .appointments .card .time {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #343f56;
+}
+/* line 109, default/style.scss */
+.page-default #page-body .UserInfos {
+  margin-top: 60px;
+  margin-left: -40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 100%;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+/* line 118, default/style.scss */
+.page-default #page-body .UserInfos .UserInfo {
+  display: flex;
+  text-align: center;
+}
+/* line 122, default/style.scss */
+.page-default #page-body .UserInfos .UserInfo .info-q, .page-default #page-body .UserInfos .UserInfo .info-a {
+  min-width: 170px;
+  padding: 5px 10px;
+  color: white;
+}
+/* line 128, default/style.scss */
+.page-default #page-body .UserInfos .UserInfo .info-q {
+  background-color: #343f56;
+}
+/* line 132, default/style.scss */
+.page-default #page-body .UserInfos .UserInfo .info-a {
+  background-color: #387c6d;
+}
+/* line 138, default/style.scss */
+.page-default #page-body .vik-map {
+  background-color: #E7E7E7;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+/* line 143, default/style.scss */
+.page-default #page-body .vik-map .title h3 {
+  background-color: transparent;
+}
+/* line 150, default/style.scss */
+.page-default #page-body .register-form {
+  width: 40%;
+  margin: 20px auto;
+            /*.form-group {
+                position: relative;
+                padding: 10px 20px;
+                box-shadow: 1px 1px 1px 1px color($colors, box-shadow);
+                margin-bottom: 10px;
+
+                input {
+                    padding: 10px;
+                    margin-bottom: 1px;
+                }
+
+                .namebefore {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin-right: 21px;
+                    margin-top: 35px;
+                    background-color: color($colors, secondary);
+                    width: 45px;
+                    height: 45px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i {
+                        font-size: 30px;
+                        color: color($colors, grey);
+                    }
+
+                    &:hover {
+                        .tip {
+                            visibility: visible;
+                            opacity: 1;
+                            transition: 0.6s;
+                        }
+                    }
+
+                    .tip {
+                        position: absolute;
+                        left: 70px;
+                        font-size: 14px;
+                        color: white;
+                        border-radius: 2px;
+                        opacity: .9;
+                        padding: 1px 3px;*/
+  /* margin: 0; */
+                        /*width: 100px;
+                    }
+                }
+
+                .span-group {
+                    i {
+                        background-color: color($colors, secondary);
+                        width: 45px;
+                        height: 45px;
+                        margin-top: -4px;
+                        margin-right: -4px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .span-group {
+                    display: flex;
+                    align-items: flex-start;
+                    width: 100%;
+                    position: relative;
+
+                    i {
+                        position: absolute;
+                        font-size: 30px;
+                        color: color($colors, grey);
+                        right: 5px;
+                        top: 4px;
+                    }
+                }
+
+                #password-icon:hover {
+                    cursor: pointer;
+                }
+            }*/
+}
+/* line 154, default/style.scss */
+.page-default #page-body .register-form label {
+  text-transform: capitalize;
+}
+/* line 158, default/style.scss */
+.page-default #page-body .register-form .requireds {
+  color: red;
+  font-size: 17px;
+}
+/* line 249, default/style.scss */
+.page-default #page-body .medicine .card, .page-default #page-body .phones .card {
+  padding: 15px 5% 15px 100px;
+  position: relative;
+}
+/* line 253, default/style.scss */
+.page-default #page-body .medicine .card .tarih, .page-default #page-body .phones .card .tarih {
+  background-color: #343f56;
+}
+/* line 258, default/style.scss */
+.page-default #page-body .medicine .tarih, .page-default #page-body .phones .tarih {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-align: center;
+  left: 16px;
+  color: #fff;
+}
+/* line 267, default/style.scss */
+.page-default #page-body .medicine .tarih .gun, .page-default #page-body .phones .tarih .gun {
+  font-family: "Roboto condensed",sans-serif;
+  font-size: 28px;
+  display: block;
+  padding-top: 5px;
+}
+/* line 274, default/style.scss */
+.page-default #page-body .medicine .tarih .ay, .page-default #page-body .phones .tarih .ay {
+  margin-top: -7px;
+  display: block;
+}
+/* line 279, default/style.scss */
+.page-default #page-body .medicine .tarih .home-widget-title, .page-default #page-body .phones .tarih .home-widget-title {
+  font-size: 18px;
+  display: block;
+  font-family: 'roboto condensed',sans-serif;
+  color: #454545;
+  margin-bottom: 10px !important;
+}
+/* line 287, default/style.scss */
+.page-default #page-body .medicine .tarih .textb, .page-default #page-body .phones .tarih .textb {
+  color: #70757e;
+  display: block;
+  font-size: 15px;
+}
+/* line 298, default/style.scss */
+.page-default #page-body .phones .phone .tarih {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+/* line 309, default/style.scss */
+.page-default footer {
+  margin-top: 50px;
+  color: white;
+  background-color: #343f56;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 319, default/style.scss */
+.page-default footer span {
+  font-size: 14px;
+}
+/* line 325, default/style.scss */
+.page-default .dene-form input:focus {
+  box-shadow: none;
+  border: none;
+}
+/* line 330, default/style.scss */
+.page-default .dene-form label {
+  padding: 7px;
+  text-transform: uppercase;
+  height: 34px;
+  margin-top: 2px;
+  background-color: #343f56;
+  color: white;
+  width: 50px;
+}
+
+/* line 344, default/style.scss */
+.theme-choice .color button {
+  border-radius: 5px;
+}
+
+/* line 3, purple/materials.scss */
+body {
+  font-weight: normal !important;
+  line-height: normal !important;
+}
+
+/* line 8, purple/materials.scss */
+.page-purple .btn-primary {
+  background-color: #5f27cd !important;
+  border-color: #5f27cd !important;
+}
+/* line 13, purple/materials.scss */
+.page-purple .btn-secondary {
+  background-color: #341f97 !important;
+  border-color: #341f97 !important;
+}
+/* line 18, purple/materials.scss */
+.page-purple a {
+  color: #5f27cd;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 24, purple/materials.scss */
+.page-purple .tip {
+  background-color: #341f97;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 35, purple/materials.scss */
+.page-purple .tip:before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: -28px;
+  margin-top: -14px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #387c6d transparent transparent;
+}
+/* line 48, purple/materials.scss */
+.page-purple .card h1, .page-purple .card h2, .page-purple .card h3, .page-purple .card h4, .page-purple .card h5, .page-purple .card h6 {
+  text-transform: capitalize !important;
+  font-weight: normal;
+}
+/* line 54, purple/materials.scss */
+.page-purple #back2top {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  opacity: 0;
+  visibility: hidden;
+  /*For better looking button*/
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background-color: #341f97;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 78, purple/materials.scss */
+.page-purple .form-group input[type=text], .page-purple .form-group input[type=password] {
+  box-shadow: none;
+  border: 0.5px solid #E7E7E7;
+  background-color: transparent !important;
+}
+/* line 83, purple/materials.scss */
+.page-purple .form-group input[type=text]:focus, .page-purple .form-group input[type=password]:focus {
+  border: 0.5px solid #341f97;
+}
+/* line 87, purple/materials.scss */
+.page-purple .form-group input[type=text]:checked, .page-purple .form-group input[type=password]:checked {
+  border: 0.5px solid #341f97;
+}
+/* line 94, purple/materials.scss */
+.page-purple .placeholder {
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: -2;
+  opacity: 0.6;
+}
+/* line 103, purple/materials.scss */
+.page-purple .placeholder-up {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  padding: 1px 3px;
+}
+
+/* line 4, purple/style.scss */
+.page-purple {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 6, purple/style.scss */
+.page-purple #header {
+  background-color: #5f27cd !important;
+}
+/* line 9, purple/style.scss */
+.page-purple #header .navbar {
+  border-radius: 5px;
+  background-color: #5f27cd !important;
+}
+/* line 13, purple/style.scss */
+.page-purple #header .navbar .nav-link {
+  color: white !important;
+  text-transform: capitalize;
+}
+/* line 19, purple/style.scss */
+.page-purple #header #photo {
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 23, purple/style.scss */
+.page-purple #header #photo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 30%;
+  border-radius: 50%;
+}
+/* line 32, purple/style.scss */
+.page-purple #header .theme-choice {
+  position: absolute;
+  top: 50px;
+  left: 34px;
+  width: 245px;
+  padding: 3px 6px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 44, purple/style.scss */
+.page-purple #header .theme-choice .color {
+  margin: 0 auto;
+}
+/* line 51, purple/style.scss */
+.page-purple #page-body .breadcrumb-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 59, purple/style.scss */
+.page-purple #page-body .appointments .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 63, purple/style.scss */
+.page-purple #page-body .appointments .title h3 {
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px 10px;
+  margin-top: 12px;
+}
+/* line 73, purple/style.scss */
+.page-purple #page-body .appointments .card {
+  box-shadow: 5px 5px rgba(0, 98, 90, 0.4);
+  margin-bottom: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 80, purple/style.scss */
+.page-purple #page-body .appointments .card .card-body .doctor-name {
+  text-transform: uppercase;
+}
+/* line 83, purple/style.scss */
+.page-purple #page-body .appointments .card .card-body .doctor-name span {
+  color: #341f97;
+  display: block;
+  font-weight: bold;
+}
+/* line 90, purple/style.scss */
+.page-purple #page-body .appointments .card .card-body .hospital-name {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+/* line 96, purple/style.scss */
+.page-purple #page-body .appointments .card .time {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #5f27cd;
+}
+/* line 109, purple/style.scss */
+.page-purple #page-body .UserInfos {
+  margin-top: 60px;
+  margin-left: -40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 100%;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+/* line 118, purple/style.scss */
+.page-purple #page-body .UserInfos .UserInfo {
+  display: flex;
+  text-align: center;
+}
+/* line 122, purple/style.scss */
+.page-purple #page-body .UserInfos .UserInfo .info-q, .page-purple #page-body .UserInfos .UserInfo .info-a {
+  min-width: 170px;
+  padding: 5px 10px;
+  color: white;
+}
+/* line 128, purple/style.scss */
+.page-purple #page-body .UserInfos .UserInfo .info-q {
+  background-color: #5f27cd;
+}
+/* line 132, purple/style.scss */
+.page-purple #page-body .UserInfos .UserInfo .info-a {
+  background-color: #341f97;
+}
+/* line 138, purple/style.scss */
+.page-purple #page-body .vik-map {
+  background-color: #E7E7E7;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+/* line 143, purple/style.scss */
+.page-purple #page-body .vik-map .title h3 {
+  background-color: transparent;
+}
+/* line 150, purple/style.scss */
+.page-purple #page-body .register-form {
+  width: 40%;
+  margin: 20px auto;
+}
+/* line 154, purple/style.scss */
+.page-purple #page-body .register-form label {
+  text-transform: capitalize;
+}
+/* line 158, purple/style.scss */
+.page-purple #page-body .register-form .requireds {
+  color: red;
+  font-size: 17px;
+}
+/* line 163, purple/style.scss */
+.page-purple #page-body .register-form .form-group {
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 1px #f8f5f1;
+  margin-bottom: 10px;
+}
+/* line 169, purple/style.scss */
+.page-purple #page-body .register-form .form-group input {
+  padding: 10px;
+  margin-bottom: 1px;
+}
+/* line 174, purple/style.scss */
+.page-purple #page-body .register-form .form-group .namebefore {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 21px;
+  margin-top: 35px;
+  background-color: #341f97;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 187, purple/style.scss */
+.page-purple #page-body .register-form .form-group .namebefore i {
+  font-size: 30px;
+  color: #E7E7E7;
+}
+/* line 193, purple/style.scss */
+.page-purple #page-body .register-form .form-group .namebefore:hover .tip {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s;
+}
+/* line 200, purple/style.scss */
+.page-purple #page-body .register-form .form-group .namebefore .tip {
+  position: absolute;
+  left: 70px;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+  opacity: .9;
+  padding: 1px 3px;
+  /* margin: 0; */
+  width: 100px;
+}
+/* line 214, purple/style.scss */
+.page-purple #page-body .register-form .form-group .span-group i {
+  background-color: #341f97;
+  width: 45px;
+  height: 45px;
+  margin-top: -4px;
+  margin-right: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 226, purple/style.scss */
+.page-purple #page-body .register-form .form-group .span-group {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+/* line 232, purple/style.scss */
+.page-purple #page-body .register-form .form-group .span-group i {
+  position: absolute;
+  font-size: 30px;
+  color: #E7E7E7;
+  right: 5px;
+  top: 4px;
+}
+/* line 241, purple/style.scss */
+.page-purple #page-body .register-form .form-group #password-icon:hover {
+  cursor: pointer;
+}
+/* line 249, purple/style.scss */
+.page-purple #page-body .medicine .card, .page-purple #page-body .phones .card {
+  padding: 15px 5% 15px 100px;
+  position: relative;
+}
+/* line 253, purple/style.scss */
+.page-purple #page-body .medicine .card .tarih, .page-purple #page-body .phones .card .tarih {
+  background-color: #5f27cd;
+}
+/* line 258, purple/style.scss */
+.page-purple #page-body .medicine .tarih, .page-purple #page-body .phones .tarih {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-align: center;
+  left: 16px;
+  color: #fff;
+}
+/* line 267, purple/style.scss */
+.page-purple #page-body .medicine .tarih .gun, .page-purple #page-body .phones .tarih .gun {
+  font-family: "Roboto condensed",sans-serif;
+  font-size: 28px;
+  display: block;
+  padding-top: 5px;
+}
+/* line 274, purple/style.scss */
+.page-purple #page-body .medicine .tarih .ay, .page-purple #page-body .phones .tarih .ay {
+  margin-top: -7px;
+  display: block;
+}
+/* line 279, purple/style.scss */
+.page-purple #page-body .medicine .tarih .home-widget-title, .page-purple #page-body .phones .tarih .home-widget-title {
+  font-size: 18px;
+  display: block;
+  font-family: 'roboto condensed',sans-serif;
+  color: #454545;
+  margin-bottom: 10px !important;
+}
+/* line 287, purple/style.scss */
+.page-purple #page-body .medicine .tarih .textb, .page-purple #page-body .phones .tarih .textb {
+  color: #70757e;
+  display: block;
+  font-size: 15px;
+}
+/* line 298, purple/style.scss */
+.page-purple #page-body .phones .phone .tarih {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+/* line 309, purple/style.scss */
+.page-purple footer {
+  margin-top: 50px;
+  color: white;
+  background-color: #5f27cd;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 319, purple/style.scss */
+.page-purple footer span {
+  font-size: 14px;
+}
+/* line 325, purple/style.scss */
+.page-purple .dene-form input:focus {
+  box-shadow: none;
+  border: none;
+}
+/* line 330, purple/style.scss */
+.page-purple .dene-form label {
+  padding: 7px;
+  text-transform: uppercase;
+  height: 34px;
+  margin-top: 2px;
+  background-color: #5f27cd;
+  color: white;
+  width: 50px;
+}
+
+/* line 344, purple/style.scss */
+.theme-choice .color button {
+  border-radius: 5px;
+}
+
+/* line 3, red/materials.scss */
+body {
+  font-weight: normal !important;
+  line-height: normal !important;
+}
+
+/* line 8, red/materials.scss */
+.page-red .btn-primary {
+  background-color: #F39C12 !important;
+  border-color: #F39C12 !important;
+}
+/* line 13, red/materials.scss */
+.page-red .btn-secondary {
+  background-color: #FF9F43 !important;
+  border-color: #FF9F43 !important;
+}
+/* line 18, red/materials.scss */
+.page-red a {
+  color: #F39C12;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 24, red/materials.scss */
+.page-red .tip {
+  background-color: #FF9F43;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 35, red/materials.scss */
+.page-red .tip:before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: -28px;
+  margin-top: -14px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #387c6d transparent transparent;
+}
+/* line 48, red/materials.scss */
+.page-red .card h1, .page-red .card h2, .page-red .card h3, .page-red .card h4, .page-red .card h5, .page-red .card h6 {
+  text-transform: capitalize !important;
+  font-weight: normal;
+}
+/* line 54, red/materials.scss */
+.page-red #toTop {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  opacity: 0;
+  visibility: hidden;
+  /*For better looking button*/
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background-color: #FF9F43;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 78, red/materials.scss */
+.page-red .form-group input[type=text], .page-red .form-group input[type=password] {
+  box-shadow: none;
+  border: 0.5px solid #E7E7E7;
+  background-color: transparent !important;
+}
+/* line 83, red/materials.scss */
+.page-red .form-group input[type=text]:focus, .page-red .form-group input[type=password]:focus {
+  border: 0.5px solid #FF9F43;
+}
+/* line 87, red/materials.scss */
+.page-red .form-group input[type=text]:checked, .page-red .form-group input[type=password]:checked {
+  border: 0.5px solid #FF9F43;
+}
+/* line 94, red/materials.scss */
+.page-red .placeholder {
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: -2;
+  opacity: 0.6;
+}
+/* line 103, red/materials.scss */
+.page-red .placeholder-up {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  padding: 1px 3px;
+}
+
+/* line 4, red/style.scss */
+.page-red {
+  font-family: 'Roboto', sans-serif;
+}
+/* line 6, red/style.scss */
+.page-red #header {
+  background-color: #F39C12 !important;
+}
+/* line 9, red/style.scss */
+.page-red #header .navbar {
+  border-radius: 5px;
+  background-color: #F39C12 !important;
+}
+/* line 13, red/style.scss */
+.page-red #header .navbar .nav-link {
+  color: white !important;
+  text-transform: capitalize;
+}
+/* line 19, red/style.scss */
+.page-red #header #photo {
+  padding: 10px;
+  border-radius: 10px;
+}
+/* line 23, red/style.scss */
+.page-red #header #photo img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 0 30%;
+  border-radius: 50%;
+}
+/* line 32, red/style.scss */
+.page-red #header .theme-choice {
+  position: absolute;
+  top: 50px;
+  left: 34px;
+  width: 245px;
+  padding: 3px 6px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 44, red/style.scss */
+.page-red #header .theme-choice .color {
+  margin: 0 auto;
+}
+/* line 51, red/style.scss */
+.page-red #page-body .breadcrumb-host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 59, red/style.scss */
+.page-red #page-body .appointments .title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 63, red/style.scss */
+.page-red #page-body .appointments .title h3 {
+  text-transform: uppercase;
+  z-index: 2;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px 10px;
+  margin-top: 12px;
+}
+/* line 73, red/style.scss */
+.page-red #page-body .appointments .card {
+  box-shadow: 5px 5px rgba(0, 98, 90, 0.4);
+  margin-bottom: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+/* line 80, red/style.scss */
+.page-red #page-body .appointments .card .card-body .doctor-name {
+  text-transform: uppercase;
+}
+/* line 83, red/style.scss */
+.page-red #page-body .appointments .card .card-body .doctor-name span {
+  color: #FF9F43;
+  display: block;
+  font-weight: bold;
+}
+/* line 90, red/style.scss */
+.page-red #page-body .appointments .card .card-body .hospital-name {
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+/* line 96, red/style.scss */
+.page-red #page-body .appointments .card .time {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 150px;
+  padding: 10px;
+  color: white;
+  background-color: #F39C12;
+}
+/* line 109, red/style.scss */
+.page-red #page-body .UserInfos {
+  margin-top: 60px;
+  margin-left: -40px;
+  font-size: 15px;
+  text-transform: capitalize;
+  height: 100%;
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+/* line 118, red/style.scss */
+.page-red #page-body .UserInfos .UserInfo {
+  display: flex;
+  text-align: center;
+}
+/* line 122, red/style.scss */
+.page-red #page-body .UserInfos .UserInfo .info-q, .page-red #page-body .UserInfos .UserInfo .info-a {
+  min-width: 170px;
+  padding: 5px 10px;
+  color: white;
+}
+/* line 128, red/style.scss */
+.page-red #page-body .UserInfos .UserInfo .info-q {
+  background-color: #F39C12;
+}
+/* line 132, red/style.scss */
+.page-red #page-body .UserInfos .UserInfo .info-a {
+  background-color: #FF9F43;
+}
+/* line 138, red/style.scss */
+.page-red #page-body .vik-map {
+  background-color: #E7E7E7;
+  padding: 20px 30px;
+  margin-top: 20px;
+}
+/* line 143, red/style.scss */
+.page-red #page-body .vik-map .title h3 {
+  background-color: transparent;
+}
+/* line 150, red/style.scss */
+.page-red #page-body .register-form {
+  width: 40%;
+  margin: 20px auto;
+}
+/* line 154, red/style.scss */
+.page-red #page-body .register-form label {
+  text-transform: capitalize;
+}
+/* line 158, red/style.scss */
+.page-red #page-body .register-form .requireds {
+  color: red;
+  font-size: 17px;
+}
+/* line 163, red/style.scss */
+.page-red #page-body .register-form .form-group {
+  position: relative;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 1px 1px #f8f5f1;
+  margin-bottom: 10px;
+}
+/* line 169, red/style.scss */
+.page-red #page-body .register-form .form-group input {
+  padding: 10px;
+  margin-bottom: 1px;
+}
+/* line 174, red/style.scss */
+.page-red #page-body .register-form .form-group .namebefore {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 21px;
+  margin-top: 35px;
+  background-color: #FF9F43;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 187, red/style.scss */
+.page-red #page-body .register-form .form-group .namebefore i {
+  font-size: 30px;
+  color: #E7E7E7;
+}
+/* line 193, red/style.scss */
+.page-red #page-body .register-form .form-group .namebefore:hover .tip {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.6s;
+}
+/* line 200, red/style.scss */
+.page-red #page-body .register-form .form-group .namebefore .tip {
+  position: absolute;
+  left: 70px;
+  font-size: 14px;
+  color: white;
+  border-radius: 2px;
+  opacity: .9;
+  padding: 1px 3px;
+  /* margin: 0; */
+  width: 100px;
+}
+/* line 214, red/style.scss */
+.page-red #page-body .register-form .form-group .span-group i {
+  background-color: #FF9F43;
+  width: 45px;
+  height: 45px;
+  margin-top: -4px;
+  margin-right: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 226, red/style.scss */
+.page-red #page-body .register-form .form-group .span-group {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+/* line 232, red/style.scss */
+.page-red #page-body .register-form .form-group .span-group i {
+  position: absolute;
+  font-size: 30px;
+  color: #E7E7E7;
+  right: 5px;
+  top: 4px;
+}
+/* line 241, red/style.scss */
+.page-red #page-body .register-form .form-group #password-icon:hover {
+  cursor: pointer;
+}
+/* line 249, red/style.scss */
+.page-red #page-body .medicine .card, .page-red #page-body .phones .card {
+  padding: 15px 5% 15px 100px;
+  position: relative;
+}
+/* line 253, red/style.scss */
+.page-red #page-body .medicine .card .tarih, .page-red #page-body .phones .card .tarih {
+  background-color: #F39C12;
+}
+/* line 258, red/style.scss */
+.page-red #page-body .medicine .tarih, .page-red #page-body .phones .tarih {
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  text-align: center;
+  left: 16px;
+  color: #fff;
+}
+/* line 267, red/style.scss */
+.page-red #page-body .medicine .tarih .gun, .page-red #page-body .phones .tarih .gun {
+  font-family: "Roboto condensed",sans-serif;
+  font-size: 28px;
+  display: block;
+  padding-top: 5px;
+}
+/* line 274, red/style.scss */
+.page-red #page-body .medicine .tarih .ay, .page-red #page-body .phones .tarih .ay {
+  margin-top: -7px;
+  display: block;
+}
+/* line 279, red/style.scss */
+.page-red #page-body .medicine .tarih .home-widget-title, .page-red #page-body .phones .tarih .home-widget-title {
+  font-size: 18px;
+  display: block;
+  font-family: 'roboto condensed',sans-serif;
+  color: #454545;
+  margin-bottom: 10px !important;
+}
+/* line 287, red/style.scss */
+.page-red #page-body .medicine .tarih .textb, .page-red #page-body .phones .tarih .textb {
+  color: #70757e;
+  display: block;
+  font-size: 15px;
+}
+/* line 298, red/style.scss */
+.page-red #page-body .phones .phone .tarih {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+/* line 309, red/style.scss */
+.page-red footer {
+  margin-top: 50px;
+  color: white;
+  background-color: #F39C12;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+}
+/* line 319, red/style.scss */
+.page-red footer span {
+  font-size: 14px;
+}
+/* line 325, red/style.scss */
+.page-red .dene-form input:focus {
+  box-shadow: none;
+  border: none;
+}
+/* line 330, red/style.scss */
+.page-red .dene-form label {
+  padding: 7px;
+  text-transform: uppercase;
+  height: 34px;
+  margin-top: 2px;
+  background-color: #F39C12;
+  color: white;
+  width: 50px;
+}
+
+/* line 344, red/style.scss */
+.theme-choice .color button {
+  border-radius: 5px;
+}

@@ -1,0 +1,188 @@
+﻿@model PHS.Models.tbl_Kisiler
+@{
+    ViewBag.Title = "EditUser";
+    Layout = "~/Views/Shared/MaterialUi.cshtml";
+}
+
+<div class="container" style="min-height:450px;">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 ml-auto mr-auto">
+            <div class="card">
+                @using (Html.BeginForm("EditUser", "Admin", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    if (ViewBag.mesaj == "0")
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            Bir Hata oluştu
+                        </div>
+                    }
+                    if (ViewBag.mesaj == "1")
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            Kayıt başarılı
+                        </div>
+                    }                    
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+            <div class="card-body">
+                @Html.HiddenFor(x => x.kisi_id)
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="kisi_isimSoyisim">İsim Soyisim <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(x => x.kisi_isimSoyisim, new { @class = "form-control", @placeholder = "İsim Soyisim*", @type = "text", @required = "required" })
+                        @Html.ValidationMessageFor(x => x.kisi_isimSoyisim)
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="kisi_telefon">Tel No <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(x => x.kisi_telefon, new { @class = "form-control", @placeholder = "tel", @type = "(555) 555 5555", @required = "required", @pattern = "[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" })
+                        @Html.ValidationMessageFor(x => x.kisi_telefon)
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="kisi_acilTelNo">Acil Durum Tel No <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(x => x.kisi_acilTelNo, new { @class = "form-control", @placeholder = "Acil durum telefon no...", @type = "tel", @required = "required", @pattern = "[0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}" })
+                        @Html.ValidationMessageFor(x => x.kisi_acilTelNo)
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="kisi_eposta">E posta <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(x => x.kisi_eposta, new { @class = "form-control", @placeholder = "Email", @type = "email", @required = "required" })
+                        @Html.ValidationMessageFor(x => x.kisi_eposta)
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="kisi_sifre">Şifre <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(x => x.kisi_sifre, new { @class = "form-control", @placeholder = "Şifre", @type = "password", @required = "required" })
+                        @Html.ValidationMessageFor(x => x.kisi_sifre)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="kisi_adresSatiri1">Address</label>
+                    @Html.TextBoxFor(x => x.kisi_adresSatiri1, new { @class = "form-control", @placeholder = "1234 main st", @type = "text" })
+                    @Html.ValidationMessageFor(x => x.kisi_adresSatiri1)
+                </div>
+                <div class="form-group">
+                    <label for="inputAddress2">Address 2</label>
+                    @Html.TextBoxFor(x => x.kisi_adresSatiri2, new { @class = "form-control", @placeholder = "apartman stduio vs", @type = "text" })
+                    @Html.ValidationMessageFor(x => x.kisi_adresSatiri2)
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="kisi_il">City</label>
+                        @Html.TextBoxFor(x => x.kisi_il, new { @class = "form-control", @placeholder = "Ankara", @type = "text" })
+                        @Html.ValidationMessageFor(x => x.kisi_il)
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        @Html.TextBoxFor(x => x.kisi_boy, new { @class = "form-control", @placeholder = "Boy", @type = "number", @required = "required" })
+                        @Html.ValidationMessageFor(x => x.kisi_boy)
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        @Html.TextBoxFor(x => x.kisi_kilo, new { @class = "form-control", @placeholder = "Kilo", @type = "number", @required = "required" })
+                        @Html.ValidationMessageFor(x => x.kisi_kilo, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label class="label-control">Doğum Tarihi <span class="text-danger">*</span></label>
+                        @Html.TextBoxFor(x => x.kisi_dogumTarihi, new { @class = "form-control datetimepicker", @required = "required" })
+                        @Html.ValidationMessageFor(x => x.kisi_dogumTarihi, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div>Cinsiyet</div>
+                <div class="form-row">
+                    @Html.DropDownList("kisi_cinsiyet <span class=\"text-danger\">*</span>",
+                    new SelectListItem[]
+                    {
+                        new SelectListItem(){Text="Erkek", Value="true",Selected=true},
+                        new SelectListItem(){Text="Kadın", Value="false"}
+                    }
+                    , new { @class = "form-control selectpicker" }
+                   )
+                    @Html.ValidationMessageFor(x => x.kisi_cinsiyet, "", new { @class = "text-danger" })
+                </div>
+                <div>Onay Durumu</div>
+                <div class="form-row">
+                    @Html.DropDownList("isOnay",
+                    new SelectListItem[]
+                    {
+                        new SelectListItem(){Text="Onaylı", Value="true"},
+                        new SelectListItem(){Text="Onaylı Değil", Value="false"}
+                    }
+                    , "Onay durumu", new { @class = "form-control selectpicker" }
+                   )
+                    @Html.ValidationMessageFor(x => x.isOnay, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-row">
+                    <div class="form-check col-12 text-dark">
+                        Günlük olarak Aktiflik durumu <span class="text-danger">*</span>
+                    </div>
+                    <div class="form-check form-check-radio mr-3">
+                        <label class="form-check-label">
+
+                            @Html.RadioButtonFor(x => x.kisi_isAktiv, "true", new { @class = "form-check-input", @checked = "checked" })
+                            Evet
+                            <span class="circle">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                    </div>
+                    <div class="form-check form-check-radio">
+                        <label class="form-check-label">
+                            @Html.RadioButtonFor(x => x.kisi_isAktiv, "false", new { @class = "form-check-input" })
+                            Hayır
+                            <span class="circle">
+                                <span class="check"></span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                    <div class="form-row">
+                        <div class="form-check col-12 text-dark">
+                            Hamilelik durumu (Kadınlar için) <span class="text-danger">*</span>
+                        </div>
+                        <div class="form-check form-check-radio mr-3">
+                            <label class="form-check-label">
+                                @Html.RadioButtonFor(x => x.kisi_isHamile, "true", new { @class = "form-check-input" })
+                                Evet
+                                <span class="circle">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form-check form-check-radio">
+                            <label class="form-check-label">
+                                @Html.RadioButtonFor(x => x.kisi_isHamile, "false", new { @class = "form-check-input", @checked = "checked" })
+                                Hayır
+                                <span class="circle">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="kisi_il">Meslek</label>
+                        @Html.TextBoxFor(x => x.kisi_meslek, new { @class = "form-control", @placeholder = "meslek..." })
+                        @Html.ValidationMessageFor(x => x.kisi_meslek, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="kisi_il">Hastalıklar</label>
+                        @Html.TextBoxFor(x => x.kişi_hastaliklari, new { @class = "form-control", @placeholder = "Hastalıklarınız." })
+                        @Html.ValidationMessageFor(x => x.kişi_hastaliklari, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</div>

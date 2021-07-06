@@ -1,0 +1,237 @@
+C:\Users\melik\source\repos\PHS\PHS\bin\PHS.dll.config
+C:\Users\melik\source\repos\PHS\PHS\bin\PHS.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\PHS.pdb
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\csc.exe
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\csc.exe.config
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\csc.rsp
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\csi.exe
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\csi.exe.config
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\csi.rsp
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.AppContext.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Console.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.IO.Compression.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.Claims.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.ValueTuple.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\vbc.exe
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\vbc.exe.config
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\vbc.rsp
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\VBCSCompiler.exe
+C:\Users\melik\source\repos\PHS\PHS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\melik\source\repos\PHS\PHS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Helpers.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Mvc.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Razor.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Webpages.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Webpages.Razor.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Razor.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Webpages.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Webpages.Razor.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Helpers.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\System.Web.Mvc.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\melik\source\repos\PHS\PHS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\melik\source\repos\PHS\PHS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\melik\source\repos\PHS\PHS\obj\Debug\PHS.csprojAssemblyReference.cache
+C:\Users\melik\source\repos\PHS\PHS\obj\Debug\PHS.csproj.CoreCompileInputs.cache
+C:\Users\melik\source\repos\PHS\PHS\obj\Debug\PHS.csproj.CopyComplete
+C:\Users\melik\source\repos\PHS\PHS\obj\Debug\PHS.dll
+C:\Users\melik\source\repos\PHS\PHS\obj\Debug\PHS.pdb
+C:\Users\melik\Desktop\PHS\PHS\bin\PHS.dll.config
+C:\Users\melik\Desktop\PHS\PHS\bin\PHS.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\PHS.pdb
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\csc.exe
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\csc.exe.config
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\csc.rsp
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\csi.exe
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\csi.exe.config
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\csi.rsp
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.AppContext.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Console.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.IO.Compression.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.Claims.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.ValueTuple.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\vbc.exe
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\vbc.exe.config
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\vbc.rsp
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\VBCSCompiler.exe
+C:\Users\melik\Desktop\PHS\PHS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\melik\Desktop\PHS\PHS\bin\EntityFramework.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\EntityFramework.SqlServer.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\RestSharp.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Helpers.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Mvc.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Razor.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Webpages.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Webpages.Razor.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\EntityFramework.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\EntityFramework.SqlServer.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\RestSharp.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Razor.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Webpages.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Webpages.Razor.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Helpers.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\System.Web.Mvc.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\melik\Desktop\PHS\PHS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\melik\Desktop\PHS\PHS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\melik\Desktop\PHS\PHS\obj\Debug\PHS.csprojAssemblyReference.cache
+C:\Users\melik\Desktop\PHS\PHS\obj\Debug\PHS.csproj.CoreCompileInputs.cache
+C:\Users\melik\Desktop\PHS\PHS\obj\Debug\PHS.csproj.CopyComplete
+C:\Users\melik\Desktop\PHS\PHS\obj\Debug\PHS.dll
+C:\Users\melik\Desktop\PHS\PHS\obj\Debug\PHS.pdb
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\PHS.dll.config
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\PHS.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\PHS.pdb
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\csc.exe
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\csc.exe.config
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\csc.rsp
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\csi.exe
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\csi.exe.config
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\csi.rsp
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.AppContext.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Console.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.IO.Compression.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.IO.Pipes.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.Claims.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.ValueTuple.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Xml.XPath.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\vbc.exe
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\vbc.exe.config
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\vbc.rsp
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\VBCSCompiler.exe
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\EntityFramework.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\EntityFramework.SqlServer.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\RestSharp.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Helpers.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Mvc.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Razor.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Webpages.Deployment.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Webpages.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Webpages.Razor.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\EntityFramework.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\EntityFramework.SqlServer.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\RestSharp.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Razor.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Webpages.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Webpages.Deployment.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Webpages.Razor.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Helpers.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\System.Web.Mvc.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\tr\System.Web.Razor.resources.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\tr\System.Web.Webpages.resources.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\tr\System.Web.Webpages.Deployment.resources.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\tr\System.Web.Webpages.Razor.resources.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\obj\Debug\PHS.csproj.CoreCompileInputs.cache
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\obj\Debug\PHS.csproj.CopyComplete
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\obj\Debug\PHS.dll
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\obj\Debug\PHS.pdb
+C:\Users\melik\Desktop\Masaüstü\PHS yedek\PHS\PHS\obj\Debug\PHS.csprojAssemblyReference.cache

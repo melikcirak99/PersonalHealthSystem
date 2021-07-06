@@ -1,0 +1,47 @@
+﻿@model PHS.Models.tbl_Randevular
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/SiteMain.cshtml";
+}
+
+<div class="container mt-5" style="min-height:500px;">
+    <table class="table table-active table-responsive">
+        <thead>
+            <tr>
+                <th>Hastahane</th>
+                <th>Doktor</th>
+                <th>Klinik</th>
+                <th>Tarih</th>
+                <th>Kişi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.randevu_hastahane)</td>
+
+
+                <td>
+                    @Html.DisplayFor(model => model.randevu_doktor)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.randevu_klinik)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.randevu_tarih)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => model.tbl_Kisiler.kisi_isimSoyisim)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        @Html.ActionLink("Düzenle", "Edit", new { id = Model.randevu_id },new { @class="btn btn-warning" }) |
+        <a href="/Home/Index" class="btn btn-primary">Geri</a>
+    </p>
+
+</div>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_PHSModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_Hastaliklar">
+    <Key>
+      <PropertyRef Name="hastalik_id" />
+    </Key>
+    <Property Name="hastalik_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kisi_id" Type="Int32" Nullable="false" />
+    <Property Name="hastalik_tani" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="hastalik_tarih" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="hastalik_klinik" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="hastalik_hekim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tbl_Kisiler" Relationship="Self.FK_tbl_Hastaliklar_tbl_Kisiler" FromRole="tbl_Hastaliklar" ToRole="tbl_Kisiler" />
+  </EntityType>
+  <EntityType Name="tbl_Kisiler">
+    <Key>
+      <PropertyRef Name="kisi_id" />
+    </Key>
+    <Property Name="kisi_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kisi_isimSoyisim" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kisi_telefon" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kisi_eposta" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="kisi_sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kisi_adresSatiri1" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="kisi_adresSatiri2" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="kisi_postaKodu" Type="Int32" />
+    <Property Name="kisi_il" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="kisi_acilTelNo" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="kisi_boy" Type="Byte" Nullable="false" />
+    <Property Name="kisi_kilo" Type="Int16" Nullable="false" />
+    <Property Name="kisi_dogumTarihi" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="kisi_cinsiyet" Type="Boolean" Nullable="false" />
+    <Property Name="kisi_isAktiv" Type="Boolean" Nullable="false" />
+    <Property Name="kisi_isHamile" Type="Boolean" Nullable="false" />
+    <Property Name="kisi_meslek" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="isOnay" Type="Boolean" />
+    <Property Name="kisi_kod1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kisi_kod2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="kisi_profilResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Hastaliklar" Relationship="Self.FK_tbl_Hastaliklar_tbl_Kisiler" FromRole="tbl_Kisiler" ToRole="tbl_Hastaliklar" />
+    <NavigationProperty Name="tbl_Randevular" Relationship="Self.FK_tbl_Randevular_tbl_Kisiler" FromRole="tbl_Kisiler" ToRole="tbl_Randevular" />
+    <NavigationProperty Name="tbl_Recete" Relationship="Self.FK_tbl_Recete_tbl_Kisiler1" FromRole="tbl_Kisiler" ToRole="tbl_Recete" />
+  </EntityType>
+  <EntityType Name="tbl_Randevular">
+    <Key>
+      <PropertyRef Name="randevu_id" />
+    </Key>
+    <Property Name="randevu_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="randevu_hastahane" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="randevu_doktor" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="randevu_klinik" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="randevu_tarih" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="kisi_id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbl_Kisiler" Relationship="Self.FK_tbl_Randevular_tbl_Kisiler" FromRole="tbl_Randevular" ToRole="tbl_Kisiler" />
+  </EntityType>
+  <EntityType Name="tbl_Recete">
+    <Key>
+      <PropertyRef Name="recete_id" />
+    </Key>
+    <Property Name="recete_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kisi_id" Type="Int32" Nullable="false" />
+    <Property Name="recete_no" Type="Int32" Nullable="false" />
+    <Property Name="recete_tarih" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="recete_tur" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="recete_hekim" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ilac_1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ilac_2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ilac_3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ilac_4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ilac_5" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Kisiler" Relationship="Self.FK_tbl_Recete_tbl_Kisiler1" FromRole="tbl_Recete" ToRole="tbl_Kisiler" />
+  </EntityType>
+  <Association Name="FK_tbl_Hastaliklar_tbl_Kisiler">
+    <End Role="tbl_Kisiler" Type="Self.tbl_Kisiler" Multiplicity="1" />
+    <End Role="tbl_Hastaliklar" Type="Self.tbl_Hastaliklar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kisiler">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="tbl_Hastaliklar">
+        <PropertyRef Name="kisi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Randevular_tbl_Kisiler">
+    <End Role="tbl_Kisiler" Type="Self.tbl_Kisiler" Multiplicity="1" />
+    <End Role="tbl_Randevular" Type="Self.tbl_Randevular" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kisiler">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="tbl_Randevular">
+        <PropertyRef Name="kisi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_Recete_tbl_Kisiler1">
+    <End Role="tbl_Kisiler" Type="Self.tbl_Kisiler" Multiplicity="1" />
+    <End Role="tbl_Recete" Type="Self.tbl_Recete" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kisiler">
+        <PropertyRef Name="kisi_id" />
+      </Principal>
+      <Dependent Role="tbl_Recete">
+        <PropertyRef Name="kisi_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="VeriTabaniPHS" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_admin" EntityType="Self.tbl_admin" />
+    <EntitySet Name="tbl_Hastaliklar" EntityType="Self.tbl_Hastaliklar" />
+    <EntitySet Name="tbl_Kisiler" EntityType="Self.tbl_Kisiler" />
+    <EntitySet Name="tbl_Randevular" EntityType="Self.tbl_Randevular" />
+    <EntitySet Name="tbl_Recete" EntityType="Self.tbl_Recete" />
+    <AssociationSet Name="FK_tbl_Hastaliklar_tbl_Kisiler" Association="Self.FK_tbl_Hastaliklar_tbl_Kisiler">
+      <End Role="tbl_Kisiler" EntitySet="tbl_Kisiler" />
+      <End Role="tbl_Hastaliklar" EntitySet="tbl_Hastaliklar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Randevular_tbl_Kisiler" Association="Self.FK_tbl_Randevular_tbl_Kisiler">
+      <End Role="tbl_Kisiler" EntitySet="tbl_Kisiler" />
+      <End Role="tbl_Randevular" EntitySet="tbl_Randevular" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_Recete_tbl_Kisiler1" Association="Self.FK_tbl_Recete_tbl_Kisiler1">
+      <End Role="tbl_Kisiler" EntitySet="tbl_Kisiler" />
+      <End Role="tbl_Recete" EntitySet="tbl_Recete" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,43 @@
+﻿@model PHS.Models.tbl_Ilac
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/SiteMain.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tbl_Ilac</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ilan_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ilan_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ilac_doz)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ilac_doz)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tbl_Recete.recete_tur)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tbl_Recete.recete_tur)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ilac_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "E Posta Onay";
+}
+
+<div>
+    @if (ViewBag.success == 1)
+    {
+        <div class="text-success">@ViewBag.OnayMesaj</div>
+        <div class="p-3">
+            <a class="nav-link" href="/Home/Login">Giriş Sayfası</a>
+        </div>
+    }
+    else
+    {
+        <div class="text-danger">@ViewBag.OnayMesaj</div>
+        <div class="pt-1 pl-2">
+            <a class="nav-link" href="/Kullanici/OnayMailGonder">Onay Sayfası</a>
+        </div>
+    }
+
+</div>

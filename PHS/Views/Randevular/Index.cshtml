@@ -1,0 +1,58 @@
+﻿@model IEnumerable<PHS.Models.tbl_Randevular>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/SiteMain.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.randevu_hastahane)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.randevu_doktor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.randevu_klinik)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.randevu_tarih)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.tbl_Kisiler.kisi_isimSoyisim)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.randevu_hastahane)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.randevu_doktor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.randevu_klinik)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.randevu_tarih)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.tbl_Kisiler.kisi_isimSoyisim)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.randevu_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.randevu_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.randevu_id })
+        </td>
+    </tr>
+}
+
+</table>

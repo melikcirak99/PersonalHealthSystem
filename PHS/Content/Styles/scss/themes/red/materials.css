@@ -1,0 +1,104 @@
+/* line 3, materials.scss */
+body {
+  font-weight: normal !important;
+  line-height: normal !important;
+}
+
+/* line 8, materials.scss */
+.page-red .btn-primary {
+  background-color: #F39C12 !important;
+  border-color: #F39C12 !important;
+}
+/* line 13, materials.scss */
+.page-red .btn-secondary {
+  background-color: #FF9F43 !important;
+  border-color: #FF9F43 !important;
+}
+/* line 18, materials.scss */
+.page-red a {
+  color: #F39C12;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/* line 24, materials.scss */
+.page-red .tip {
+  background-color: #FF9F43;
+  color: white;
+  padding: 5px 10px;
+  text-transform: capitalize;
+  text-align: center;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+/* line 35, materials.scss */
+.page-red .tip:before {
+  content: " ";
+  position: absolute;
+  top: 11px;
+  left: -28px;
+  margin-top: -14px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: transparent #387c6d transparent transparent;
+}
+/* line 48, materials.scss */
+.page-red .card h1, .page-red .card h2, .page-red .card h3, .page-red .card h4, .page-red .card h5, .page-red .card h6 {
+  text-transform: capitalize !important;
+  font-weight: normal;
+}
+/* line 54, materials.scss */
+.page-red #toTop {
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  display: none;
+  /*For better looking button*/
+  font-family: sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.3;
+  background-color: #FF9F43;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 18px;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+}
+/* line 77, materials.scss */
+.page-red .form-group input[type=text], .page-red .form-group input[type=password] {
+  box-shadow: none;
+  border: 0.5px solid #E7E7E7;
+  background-color: transparent !important;
+}
+/* line 82, materials.scss */
+.page-red .form-group input[type=text]:focus, .page-red .form-group input[type=password]:focus {
+  border: 0.5px solid #FF9F43;
+}
+/* line 86, materials.scss */
+.page-red .form-group input[type=text]:checked, .page-red .form-group input[type=password]:checked {
+  border: 0.5px solid #FF9F43;
+}
+/* line 93, materials.scss */
+.page-red .placeholder {
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  transition: 0.5s;
+  z-index: -2;
+  opacity: 0.6;
+}
+/* line 102, materials.scss */
+.page-red .placeholder-up {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  background-color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  padding: 1px 3px;
+}
