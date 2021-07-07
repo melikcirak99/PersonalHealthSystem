@@ -5,3 +5,5 @@
 *.xml linguist-detectable=false
 *.css linguist-detectable=false
 *.scss linguist-detectable=false
+*.html linguist-detectable=false
+*.json linguist-detectable=false
